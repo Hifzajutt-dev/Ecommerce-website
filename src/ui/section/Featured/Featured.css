@@ -1,0 +1,202 @@
+.arrival {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.flex-arrival {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.left-arrival {
+  position: relative;
+  width: 100%;
+  background-color: black;
+  max-width: 560px;
+  height: 520px;
+}
+.overlay-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+
+  width: 80%;
+}
+
+.overlay-text h2,
+.overlay-text h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.overlay-text p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.overlay-text button {
+  border-bottom: 1px solid #ffffff;
+
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.bg-img {
+  position: relative;
+  display: inline-block;
+}
+
+.bg-img img {
+  width: 100%;
+  display: block;
+}
+
+.right-arrival {
+  width: 560px;
+}
+
+.flex-top {
+  position: relative;
+  width: 100%;
+  height: 255px;
+}
+
+.flex-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: full;
+}
+
+.flex-btm {
+  display: flex;
+  gap: 1rem;
+
+  margin-top: 0.7rem;
+}
+
+.btm-card {
+  position: relative;
+  width: calc(50% - 5px);
+  height: 255px;
+}
+
+.btm-card img {
+  background-color: black;
+  padding: 1.7rem;
+  width: 100%;
+  height: 255px;
+
+  object-fit: contain;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+
+  width: 80%;
+}
+
+.overlay-text h2,
+.overlay-text h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.overlay-text p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.overlay-text button {
+  border-bottom: 1px solid #ffffff;
+
+  cursor: pointer;
+  font-weight: 500;
+}
+
+@media (max-width: 1170px) {
+  .flex-arrival {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-arrival,
+  .right-arrival {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .btm-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .arrival {
+    font-size: 1.8rem;
+  }
+
+  .overlay-text h2,
+  .overlay-text h3 {
+    font-size: 18px;
+  }
+
+  .overlay-text p {
+    font-size: 12px;
+  }
+
+  .overlay-text button {
+    font-size: 12px;
+  }
+
+  .flex-top,
+  .btm-card {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .arrival {
+    font-size: 1.5rem;
+  }
+
+  .overlay-text {
+    width: 90%;
+    left: 10px;
+    bottom: 10px;
+  }
+
+  .overlay-text h2,
+  .overlay-text h3 {
+    font-size: 16px;
+  }
+
+  .overlay-text p {
+    font-size: 12px;
+  }
+
+  .overlay-text button {
+    font-size: 12px;
+  }
+
+  .left-arrival,
+  .right-arrival {
+    width: 100%;
+  }
+
+  .flex-top,
+  .btm-card {
+    height: 180px;
+  }
+}

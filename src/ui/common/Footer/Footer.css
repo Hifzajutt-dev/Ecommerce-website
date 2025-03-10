@@ -1,0 +1,144 @@
+.footer-container {
+  width: 100%;
+  background-color: black;
+  padding: 3rem 1rem;
+  color: white;
+  text-align: center;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: auto;
+  gap: 1rem;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.footer-section h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.footer-section h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 0.7rem;
+}
+
+.footer-section p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0.7rem;
+}
+
+
+.mail {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #fafafa;
+  width: 100%;
+  max-width: 14rem;
+  border-radius: 0.2rem;
+  margin-top: 1rem;
+  padding: 0.3rem 0.5rem;
+}
+
+.mail input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+ 
+}
+
+
+.download-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.download-para{
+  font-size: 0.5rem;
+}
+
+.qr-code {
+  width: 80px;
+  height: 80px;
+}
+
+.store-icons img {
+  display: block;
+  width: 120px;
+  margin-bottom: 0.5rem;
+}
+
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem; 
+  margin-top: 1rem;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: rgba(249, 249, 249, 0.8);
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+ 
+  .mail {
+    max-width: 100%;
+  }
+  .download-section {
+    flex-direction: column;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    width: 100%;
+    text-align: center;
+    
+  }
+}
+
+@media (max-width: 480px) {
+  .mail {
+    width: 100%;
+  }
+  .social-icons {
+    gap: 1rem;
+  }
+}
+

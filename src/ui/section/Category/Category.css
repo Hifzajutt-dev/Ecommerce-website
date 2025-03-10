@@ -1,0 +1,118 @@
+section {
+  border-top: 1px solid #ddd;
+  padding-top: 4rem;
+}
+.Category-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  height: auto;
+}
+.categories {
+  display: flex;
+  gap: 25px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 3rem;
+}
+.categories > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 177px;
+  height: 140px;
+}
+.categories > div.camera {
+  background-color: #db4444;
+}
+
+.categories > div:hover {
+  background-color: #db4444;
+}
+
+.categories img {
+  width: 40px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.categories h1 {
+  font-size: 16px;
+}
+@media screen and (max-width: 1024px) {
+  .Category-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .categories {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .categories > div {
+    width: 150px;
+    height: 120px;
+  }
+
+  .categories img {
+    width: 35px;
+  }
+
+  .categories h1 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .categories {
+    gap: 10px;
+  }
+
+  .categories > div {
+    width: 130px;
+    height: 110px;
+  }
+
+  .categories img {
+    width: 30px;
+  }
+
+  .categories h1 {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Category-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .categories {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .categories > div {
+    width: 100%;
+    max-width: 200px;
+    height: 100px;
+  }
+
+  .categories img {
+    width: 25px;
+  }
+
+  .categories h1 {
+    font-size: 12px;
+  }
+}

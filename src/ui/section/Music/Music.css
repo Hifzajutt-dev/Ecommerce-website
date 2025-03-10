@@ -1,0 +1,98 @@
+.music-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+.music-content {
+  padding: 20px;
+}
+.music-content h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
+}
+.category {
+  color: #00ff00;
+  font-weight: 500;
+}
+.timer {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+.time-box {
+  background: #ffffff;
+  color: black;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  padding: 15px;
+  text-align: center;
+}
+.time-box span {
+  font-weight: 700;
+}
+.buy-btn {
+  background-color: #00ff66;
+  color: #fafafa;
+  padding: 18px 3rem;
+  border: none;
+  margin-top: 1.3rem;
+}
+@media screen and (max-width: 1024px) {
+  .music-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .music-content h1 {
+    font-size: 2rem;
+  }
+
+  .timer {
+    justify-content: center;
+  }
+
+  .time-box {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 0.8rem;
+  }
+
+  .buy-btn {
+    padding: 12px 2rem;
+  }
+
+  .speaker-img {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .music-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .timer {
+    gap: 8px;
+  }
+
+  .time-box {
+    width: 3rem;
+    height: 3rem;
+    font-size: 0.7rem;
+  }
+
+  .buy-btn {
+    font-size: 0.9rem;
+    padding: 10px 1.8rem;
+  }
+
+  .speaker-img {
+    max-width: 250px;
+  }
+}
+  

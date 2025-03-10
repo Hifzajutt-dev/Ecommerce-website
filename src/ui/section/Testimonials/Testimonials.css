@@ -1,0 +1,94 @@
+.main-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  flex-wrap: wrap;
+}
+
+.fast-delivery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #efefef;
+  margin: 0 auto;
+}
+
+.black-cirlce {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: #130f0f;
+}
+
+.main-div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+}
+
+.main-div div h1,
+.main-div div p {
+  text-align: center;
+}
+
+.main-div div h1 {
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-div {
+    gap: 4rem;
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-div {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .main-div > div {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-div {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .main-div > div {
+    max-width: 100%;
+  }
+
+  .fast-delivery {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .black-cirlce {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .main-div div h1 {
+    font-size: 1.2rem;
+  }
+
+  .main-div div p {
+    font-size: 0.9rem;
+  }
+}
