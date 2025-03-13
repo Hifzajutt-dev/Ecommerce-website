@@ -10,6 +10,7 @@ import Computer from "../../../assets/Computer.png";
 import Camera from "../../../assets/Camera.png";
 
 function Category() {
+  
   return (
     <>
       <section>
@@ -23,7 +24,7 @@ function Category() {
           </div>
 
           <div className="arrows">
-            <div className="first-arrow">
+            <div className="first-arrow" >
               <img src={Arrows} alt="" />
             </div>
             <div className="second-arrow">

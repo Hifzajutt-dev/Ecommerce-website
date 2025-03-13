@@ -1,6 +1,8 @@
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./ui/common/Navbar/Navbar";
 import Home from "./ui/pages/home/Home";
-// import Products from "./ui/pages/Products/Products";
+import SearchResults from "./ui/pages/SearchResults/SearchResults";
 import Flash from "./ui/section/Flashsale/Flash";
 import Category from "./ui/section/Category/Category";
 import Selling from "./ui/section/Selling/Selling";
@@ -9,11 +11,17 @@ import OurProduct from "./ui/section/OurProduct/Index";
 import Featured from "./ui/section/Featured/Featured";
 import Testimonials from "./ui/section/Testimonials/Testimonials";
 import Footer from "./ui/common/Footer/Footer";
+
 function App() {
+  const [search, setSearch] = useState("");
+
   return (
-    <>
-      <Navbar />
-      <Home />
+    <Router>
+      <Navbar search={search} setSearch={setSearch} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/search" element={<SearchResults />} />
+      </Routes>
       <Flash />
       <Category />
       <Selling />
@@ -22,8 +30,8 @@ function App() {
       <Featured />
       <Testimonials />
       <Footer />
-      {/* <Products /> */}
-    </>
+    </Router>
   );
 }
+
 export default App;

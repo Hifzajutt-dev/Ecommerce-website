@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../../assets/Logo.png";
 import Vector from "../../../assets/Vector.png";
@@ -6,9 +7,15 @@ import Wishlist from "../../../assets/Wishlist.png";
 import Cart from "../../../assets/Cart.png";
 import Hamburger from "../../../assets/menu-bar.png";
 
-const Navbar = () => {
+const Navbar = ({ search, setSearch }) => {
+  const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const handleSearch = () => {
+    if (search.trim()) {
+      navigate(`/search?query=${search}`);
+    }
+  };
   return (
     <nav>
       <div className="logo">
@@ -24,29 +31,28 @@ const Navbar = () => {
         <span>Contact</span>
         <span>About</span>
         <span>Sign Up</span>
-        <a
-                href="#" onClick={(e) => {
-                  e.preventDefault();
-                  window.location.href = "./product";
-                }}
-                className="text-black"
-              >
-                Navigate
-              </a>
-
-        
       </div>
 
       <div className="search">
-        <input type="text" placeholder="What are you looking for?" />
-        <img src={Vector} alt="Search" />
+        <input
+          type="text"
+          placeholder="What are you looking for?"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="search-input"
+        />
+        <img
+          src={Vector}
+          alt="Search"
+          onClick={handleSearch}
+          className="search-icon"
+        />
       </div>
 
       <div className="icons">
         <img src={Wishlist} alt="Wishlist" />
         <img src={Cart} alt="Cart" />
       </div>
-
     </nav>
   );
 };

@@ -6,7 +6,6 @@
   
 
 }
-
 .card-image-container {
   width: 18rem;
   height: 15rem;
@@ -40,6 +39,7 @@
   font-size: 1rem;
   font-weight: 600;
   margin-top: 4px;
+  text-align: start;
 }
 
 .card-rating {
