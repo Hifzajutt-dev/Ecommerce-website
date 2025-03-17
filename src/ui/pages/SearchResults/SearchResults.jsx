@@ -12,7 +12,7 @@ const SearchResults = () => {
   );
 return (
     <div className="search-results-container">
-      <div className="product-grid">
+      <div className="product-flex">
         {filteredProducts.length > 0 ? (
           filteredProducts.map(({ id, ...product }) => <Card key={id} {...product} />)
         ) : (

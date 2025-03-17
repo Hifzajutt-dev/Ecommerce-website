@@ -16,37 +16,23 @@
   border-right: 1px solid #ddd;
 }
 .left-container p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   cursor: pointer;
-  margin: 5px 0;
-}
-.left-container .women,
-.fashion {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.left-container img {
-  width: 12px;
-  height: 12px;
+  margin: 8px 0;
 }
 .right-container {
-  width: 900px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  margin-left: 1.2rem;
+  width: 70%;
+  margin: auto;
+}
+.slick-slide img {
+  width: 100%;
   border-radius: 2px;
 }
-
-.right-container img {
-  width: 100%;
-  height: auto;
+.slider-image {
+  height: 27rem;
+  display: block;
 }
-
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -60,6 +46,7 @@
 
   .right-container {
     width: 100%;
+
     margin-left: 0;
     padding: 5px;
   }

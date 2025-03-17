@@ -11,6 +11,7 @@ import OurProduct from "./ui/section/OurProduct/Index";
 import Featured from "./ui/section/Featured/Featured";
 import Testimonials from "./ui/section/Testimonials/Testimonials";
 import Footer from "./ui/common/Footer/Footer";
+import HomeDetailPage from "./ui/pages/HomeDetailspage/HomeDetailpage";
 
 function App() {
   const [search, setSearch] = useState("");
@@ -18,10 +19,15 @@ function App() {
   return (
     <Router>
       <Navbar search={search} setSearch={setSearch} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/search" element={<SearchResults />} />
-      </Routes>
+   
+
+<Routes>
+  <Route path="/" element={<Home />} />
+  <Route path="/search" element={<SearchResults />} />
+  <Route path="/search/:id" element={<SearchResults />} />
+  <Route path="/Articles/:id" element={<HomeDetailPage />} /> 
+</Routes>
+
       <Flash />
       <Category />
       <Selling />
@@ -35,3 +41,4 @@ function App() {
 }
 
 export default App;
+
